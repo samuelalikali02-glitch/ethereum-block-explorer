@@ -2,6 +2,10 @@
 
 A web-based Ethereum blockchain explorer built with React.js and the Alchemy SDK. Search blocks, inspect transaction details, and check Ethereum wallet balances through a responsive interface.
 
+## Project Preview
+
+![Ethereum Block Explorer screenshot](screenshot.jpg)
+
 **Live Demo:** [View Ethereum Block Explorer](https://ethereum-block-explorer-two.vercel.app/)
 
 **Source Code:** [GitHub Repository](https://github.com/samuelalikali02-glitch/ethereum-block-explorer)
