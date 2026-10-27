@@ -1,67 +1,71 @@
-
 # Ethereum Block Explorer
 
-A web application for exploring Ethereum blockchain data. Search for blocks, look up transaction hashes, inspect wallet addresses, and view ETH balances.
+A web-based Ethereum blockchain explorer built with React.js and the Alchemy SDK. Search blocks, inspect transaction details, and check Ethereum wallet balances through a responsive interface.
 
-**[Live Demo](https://ethereum-block-explorer-two.vercel.app/) · [GitHub Repository](https://github.com/samuelalikali02-glitch/ethereum-block-explorer)**
+**Live Demo:** [View Ethereum Block Explorer](https://ethereum-block-explorer-two.vercel.app/)
 
-## Project Preview
-
-![Ethereum Block Explorer screenshot](screenshots/ethereum-block-explorer.jpg)
+**Source Code:** [GitHub Repository](https://github.com/samuelalikali02-glitch/ethereum-block-explorer)
 
 ## Features
 
-- **Block search:** Look up Ethereum blocks by block number.
-- **Transaction search:** Search for a transaction using its hash.
-- **Wallet lookup:** Retrieve information for a wallet address.
-- **ETH balance:** Display the ETH balance associated with a wallet.
-- **Etherscan link:** Navigate to the corresponding wallet on Etherscan.
-- **Web deployment:** Access the application through its Vercel deployment.
+- **Latest Block:** Retrieve the latest Ethereum Mainnet block number.
+- **Block Search:** Search for a block using its block number.
+- **Transaction Lookup:** Inspect transaction details, including sender, recipient, ETH value, gas information, and transaction status.
+- **Wallet Lookup:** Check an Ethereum address's ETH balance.
+- **Etherscan Integration:** Open relevant blockchain information in Etherscan.
+- **Responsive Interface:** Use the application on desktop and mobile devices.
 
-## Technologies Used
+## Built With
 
-- **React** — user interface.
-- **JavaScript** — application logic.
-- **Alchemy SDK** — access to Ethereum blockchain data.
-- **React Router** — client-side navigation.
-- **Git and GitHub** — source control and project hosting.
-- **Vercel** — application deployment.
+- React.js
+- JavaScript
+- Alchemy SDK
+- Ethereum Mainnet
+- CSS
+- Git and GitHub
+- Vercel
 
-## Run Locally
+## Getting Started
 
 ### Prerequisites
 
-Install [Node.js and npm](https://nodejs.org/). You will also need an Alchemy account and an Ethereum API key.
+Install [Node.js](https://nodejs.org/) and Git before starting.
 
-### 1. Clone the repository
+### Installation
 
-```bash
-git clone https://github.com/samuelalikali02-glitch/ethereum-block-explorer.git
-```
+1. Clone the repository:
 
-### 2. Enter the project directory
+   ```bash
+   git clone https://github.com/samuelalikali02-glitch/ethereum-block-explorer.git
+   ```
 
-```bash
-cd ethereum-block-explorer
-```
+2. Navigate to the project directory:
 
-### 3. Install dependencies
+   ```bash
+   cd ethereum-block-explorer
+   ```
 
-```bash
-npm install
-```
+3. Install the dependencies:
 
-### 4. Configure the API key
+   ```bash
+   npm install
+   ```
 
-Create a `.env` file in the project root and add:
+### Configure the Alchemy API
 
-```env
-REACT_APP_ALCHEMY_API_KEY=YOUR_ALCHEMY_API_KEY
-```
+1. Create an Ethereum Mainnet app through the [Alchemy Dashboard](https://dashboard.alchemy.com/).
+2. Create a `.env` file in the project root, alongside `package.json`.
+3. Add your API key:
 
-Replace the placeholder with your own API key. Never commit your `.env` file or expose private credentials.
+   ```env
+   REACT_APP_ALCHEMY_API_KEY=your_alchemy_api_key
+   ```
 
-### 5. Start the application
+   Replace `your_alchemy_api_key` with your own key. Never commit your actual API key to GitHub.
+
+### Run Locally
+
+Start the development server:
 
 ```bash
 npm start
@@ -71,34 +75,38 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## Deployment
 
-The application is deployed on Vercel:
+The application is deployed on Vercel.
 
-https://ethereum-block-explorer-two.vercel.app/
+To deploy your own version, connect your GitHub repository to [Vercel](https://vercel.com/) and configure the required environment variable in the project settings.
 
-For a production deployment, configure the required environment variables in your Vercel project settings and redeploy after making changes.
+**Security note:** Create React App exposes `REACT_APP_` environment variables in the browser bundle. Restrict your Alchemy key where possible and consider a backend proxy for stronger protection.
 
 ## What I Learned
 
-- Accessing Ethereum blockchain data through an SDK.
-- Working with block numbers, transaction hashes, and wallet addresses.
-- Managing environment variables for API configuration.
-- Using Git and GitHub to maintain a project.
-- Deploying a React application with Vercel.
+Through this project, I gained practical experience with:
+
+- Connecting a React application to Ethereum Mainnet.
+- Retrieving blockchain data through an API.
+- Searching for blocks and inspecting transactions.
+- Reading wallet balances and displaying blockchain data.
+- Managing project code with Git and GitHub.
+- Deploying a web application using Vercel.
+- Configuring environment variables and troubleshooting API connectivity.
 
 ## Future Improvements
 
-- Display detailed block and transaction information.
-- Add clearer validation and error messages for invalid searches.
-- Improve mobile responsiveness and accessibility.
-- Add transaction history and additional wallet information.
+- Display full block details and transaction lists.
+- Add wallet transaction history.
+- Improve loading indicators and error handling.
+- Add support for additional Ethereum networks.
+- Introduce a backend API layer to improve API key protection.
 
 ## Author
 
-**Samuel Alikali-Ojima**
+**Samuel Alikali-Ojima Ojo**
 
-- [Portfolio](https://samuelalikali02-glitch.github.io/#projects)
-- [GitHub](https://github.com/samuelalikali02-glitch)
+Final-year Mechatronics Engineering student exploring Web3, embedded systems, robotics, and AI/ML.
 
----
+- **Live Project:** https://ethereum-block-explorer-two.vercel.app/
+- **GitHub:** https://github.com/samuelalikali02-glitch
 
-Built as a hands-on Web3 learning project.
